@@ -1,5 +1,12 @@
-# CaptiX
-CaptiX is a simple yet powerful Python-based application that converts YouTube videos or local video files into audio (MP3 format) and automatically generates captions using OpenAI's Whisper model.
+**Repository Name:** CaptiX  
+**Description:**  
+CaptiX is a simple yet powerful Python-based application that converts YouTube videos or local video files into audio (MP3 format) and automatically generates captions using OpenAI's Whisper model. It allows users to choose a start and end time for video trimming, convert video to audio, and retrieve auto-captions with language support. Perfect for users who want to transcribe and convert videos effortlessly.
+
+---
+
+### Tutorial (README.md for GitHub):
+
+```markdown
 # CaptiX - Video to Audio + Auto-Caption Tool
 
 **CaptiX** is an application developed by dzasofalum to convert YouTube videos or local video files into MP3 format and generate captions using OpenAI's Whisper model. It’s perfect for video content creators, transcriptionists, or anyone who needs to convert videos into text.
@@ -33,46 +40,68 @@ You can install the dependencies using `pip`:
 
 ```bash
 pip install yt-dlp openai-whisper
+```
 
-## Additionally, you need ffmpeg installed on your system.
+Additionally, you need **ffmpeg** installed on your system.
 
-For Windows: Download ffmpeg
-For Linux/Mac: Install ffmpeg using apt-get or brew.
-2. Clone the Repository:
+- **For Windows**: [Download ffmpeg](https://ffmpeg.org/download.html)
+- **For Linux/Mac**: Install ffmpeg using `apt-get` or `brew`.
+
+### 2. Clone the Repository:
+
+```bash
 git clone https://github.com/yourusername/CaptiX.git
 cd CaptiX
-How to Use:
-Run the Application:
+```
+
 ---
-## After setting up, run the script using the following command:
-python captiX.py
 
-Choose Input:
+## How to Use:
 
-Link: Enter a YouTube video URL.
-File: Upload a local video file.
-Trim Video (For YouTube):
+1. **Run the Application**:
 
-Enter the start and end time in minutes.
-Convert to MP3:
+   After setting up, run the script using the following command:
 
-The video will be converted to audio after trimming.
-Auto-Caption:
+   ```bash
+   python captiX.py
+   ```
 
-After conversion, you’ll be asked if you want to extract auto-captions.
-If "yes", captions will be extracted using Whisper, and you'll see the detected language.
-Exit:
+2. **Choose Input**:
+   - **Link**: Enter a YouTube video URL.
+   - **File**: Upload a local video file.
 
-The application will exit after completing the process.
-Example Usage:
+3. **Trim Video** (For YouTube):
+   - Enter the start and end time in **minutes**.
+
+4. **Convert to MP3**:
+   - The video will be converted to audio after trimming.
+
+5. **Auto-Caption**:
+   - After conversion, you’ll be asked if you want to extract auto-captions.
+   - If "yes", captions will be extracted using Whisper, and you'll see the detected language.
+   
+6. **Exit**: 
+   - The application will exit after completing the process.
+
+---
+
+## Example Usage:
+
+```bash
 $ python captiX.py
 
 Enter YouTube video URL or file path: [URL or path]
 Start time (minutes): 1
 End time (minutes): 5
 Do you want auto-captions? (y/n): y
+```
+
+---
 
 ## License
+
 CaptiX is licensed under the MIT License.
-License
-CaptiX is licensed under the MIT License.
+
+```
+
+Once you have this setup, you can upload the script to GitHub and provide this README.md file for users to easily follow the instructions.
